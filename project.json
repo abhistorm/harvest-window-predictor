@@ -1,0 +1,54 @@
+{
+  "id": "065",
+  "slug": "065-harvest-window-predictor",
+  "name": "Harvest Window Predictor",
+  "domain": "Agriculture & food systems",
+  "domain_slug": "agriculture",
+  "task_type": "regression",
+  "target": "p065_harvest_window_predictor_outcome_value",
+  "features": [
+    "p065_harvest_window_predictor_soil_ph",
+    "p065_harvest_window_predictor_nitrogen_ppm",
+    "p065_harvest_window_predictor_phosphorus_ppm",
+    "p065_harvest_window_predictor_potassium_ppm",
+    "p065_harvest_window_predictor_soil_moisture_pct",
+    "p065_harvest_window_predictor_sunlight_hours",
+    "p065_harvest_window_predictor_temperature_c",
+    "p065_harvest_window_predictor_rainfall_mm",
+    "p065_harvest_window_predictor_seed_density",
+    "p065_harvest_window_predictor_pest_pressure"
+  ],
+  "model_key": "support-vector-regression",
+  "model_class": "SVR",
+  "serving": "CLI",
+  "extension_focus": "Polars feature engineering",
+  "seed": 202665,
+  "rows": 422608,
+  "dataset_bytes": 39505313,
+  "model_training": {
+    "source": "synthetic dataset bundled with this project",
+    "sample_rows": 5000,
+    "fit_rows": 4000,
+    "holdout_rows": 1000,
+    "metrics": {
+      "mae": 0.5072,
+      "rmse": 0.6944,
+      "r2": 0.9446
+    },
+    "artifact": "models/model.joblib"
+  },
+  "gui_feature": {
+    "mode": "history",
+    "title": "Harvest Window Predictor · Prediction history",
+    "description": "Keep a private browser-local history for this project and export it as JSON. This panel is tuned to Harvest Window Predictor and its p065 harvest window predictor soil moisture pct signal.",
+    "focus_feature": "p065_harvest_window_predictor_soil_moisture_pct",
+    "mode_title": "Prediction history"
+  },
+  "gui": {
+    "frontend": "HTML/CSS/JavaScript",
+    "backend": "FastAPI",
+    "standalone": true
+  },
+  "model_artifact": "models/model.joblib",
+  "model_bytes": 348169
+}

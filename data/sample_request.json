@@ -1,0 +1,14 @@
+{
+  "features": {
+    "p065_harvest_window_predictor_soil_ph": 0.0,
+    "p065_harvest_window_predictor_nitrogen_ppm": 0.0,
+    "p065_harvest_window_predictor_phosphorus_ppm": 0.0,
+    "p065_harvest_window_predictor_potassium_ppm": 0.0,
+    "p065_harvest_window_predictor_soil_moisture_pct": 0.0,
+    "p065_harvest_window_predictor_sunlight_hours": 0.0,
+    "p065_harvest_window_predictor_temperature_c": 0.0,
+    "p065_harvest_window_predictor_rainfall_mm": 0.0,
+    "p065_harvest_window_predictor_seed_density": 0.0,
+    "p065_harvest_window_predictor_pest_pressure": 0.0
+  }
+}
